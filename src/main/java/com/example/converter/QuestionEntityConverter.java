@@ -1,8 +1,11 @@
 package com.example.converter;
 
+import org.springframework.stereotype.Component;
+
 import com.example.boundary.QuestionBoundary;
 import com.example.entity.QuestionEntity;
 
+@Component
 public class QuestionEntityConverter {
 
 	public QuestionBoundary fromEntity(QuestionEntity questionEntity) {

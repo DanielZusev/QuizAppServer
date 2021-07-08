@@ -30,7 +30,7 @@ public class QuestionController {
 		return questionService.getAll();
 	}
 	
-	@RequestMapping(path = "/questions/{categoryId}",
+	@RequestMapping(path = "/questions/category/{categoryId}",
 			method = RequestMethod.GET,
 			produces = MediaType.APPLICATION_JSON_VALUE)
 

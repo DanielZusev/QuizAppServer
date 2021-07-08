@@ -5,12 +5,14 @@ import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.boundary.QuestionBoundary;
 import com.example.converter.QuestionEntityConverter;
 import com.example.dao.QuestionDao;
 import com.example.service.QuestionService;
 
+@Service
 public class DbQuestionService implements QuestionService {
 
 	private QuestionDao questionDao;
