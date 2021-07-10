@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
 import com.example.entity.QuestionEntity;
 
 
-
 @Repository
 public interface QuestionDao extends MongoRepository<QuestionEntity, String>{
 	

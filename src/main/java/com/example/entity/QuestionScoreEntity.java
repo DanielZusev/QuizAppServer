@@ -1,8 +1,13 @@
 package com.example.entity;
 
-import org.springframework.data.mongodb.core.mapping.Document;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-@Document(collection = "questionScores")
+
+
+@Entity
+@Table(name = "scores")
 public class QuestionScoreEntity {
 	
 	private String questionScore;
@@ -15,7 +20,7 @@ public class QuestionScoreEntity {
 
 	}
 
-	public QuestionScoreEntity(String questionScore, String player, String score, String categoryId,String categoryName) {
+	public QuestionScoreEntity(String questionScore, String player, String score, String categoryId, String categoryName) {
 
 		this.questionScore = questionScore;
 		this.player = player;
@@ -24,6 +29,7 @@ public class QuestionScoreEntity {
 		this.categoryName = categoryName;
 	}
 
+	@Id
 	public String getQuestionScore() {
 		return questionScore;
 	}
